@@ -1,0 +1,12 @@
+---
+- hosts: controlservers
+  become: true
+
+  tasks:
+    - name: Install sshpass
+      apt:
+        pkg:
+          - sshpass
+
+        state: latest
+        update_cache: true

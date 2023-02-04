@@ -64,3 +64,6 @@
       community.general.ufw:
         state: enabled
         default: deny
+
+- name: app servers setup
+  import_playbook: controlservers.yml
